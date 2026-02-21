@@ -7,7 +7,7 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { 
-	"Noto Sans Mono:style=Regular:pixelsize=18:antialias=true:autohint=true",
+	"Noto Sans Mono:style=Regular:pixelsize=19:antialias=true:autohint=true",
 	"Noto Color Emoji:style=Regular:pixelsize=18:antialias=true:autohint=true"
 };
 static const char dmenufont[]       = "Noto Sans Mono:style=Regular:pixelsize=18:antialias=true:autohint=true";
@@ -116,6 +116,8 @@ static const Key keys[] = {
 	{ 0,                      XF86XK_AudioStop,        spawn,     SHCMD("aud stop") },
 	{ 0,                      XF86XK_AudioPrev,        spawn,     SHCMD("aud prev") },
 	{ 0,                      XF86XK_AudioNext,        spawn,     SHCMD("aud next") },
+	{ 0,                      XF86XK_MonBrightnessUp,   spawn,     SHCMD("bright up") },
+	{ 0,                      XF86XK_MonBrightnessDown,   spawn,   SHCMD("bright down") },
 
 };
 
